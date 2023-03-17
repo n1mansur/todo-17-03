@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__container container">
+        <header class="header">
+          <h1 class="header__h1">To Do list APP</h1>
+        </header>
+        <div class="main">
+          <div class="main__content">
+            <form class="form">
+              <input
+                placeholder="Text input"
+                class="form__inp"
+                type="text"
+                name="todo"
+                id="listValue"
+              />
+              <button id="btn" type="submit" class="form__btn">Add</button>
+            </form>
+            <ul class="list">
+              <li class="item" id="">
+                <input class="" type="checkbox" value="" checked />
+                <input class="item__input" type="text" value="mmm" disabled />
+                <div class="item__btns">
+                  <button class="item__btn done__btn">
+                    <i class="bx bx-md bx-check"></i>
+                  </button>
+                  <button class="item__btn edit__btn">
+                    <i class="bx bx-sm bxs-pencil"></i>
+                  </button>
+                  <button id="${v.id}" class="item__btn delete__btn">
+                    <i class="bx bx-md bx-x"></i>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer">
+            <button class="footer__btn">Clear all</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
